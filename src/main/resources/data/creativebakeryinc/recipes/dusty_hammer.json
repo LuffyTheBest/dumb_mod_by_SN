@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GlG",
+    "lHl",
+    "BBB"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    "l": {
+      "item": "minecraft:glass"
+    },
+    "H": {
+      "item": "creativebakeryinc:hammer"
+    },
+    "B": {
+      "item": "minecraft:brick"
+    }
+  },
+  "result": {
+    "item": "creativebakeryinc:dusty_hammer",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="creativebakeryinc"
+version="1.0.0"
+displayName="Creative Bakery Inc"
+authors="SN"
+description='''
+A mod SN's dumb ideas :D
+'''
+
+[[dependencies.creativebakeryinc]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.creativebakeryinc]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
+
