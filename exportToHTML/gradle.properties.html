@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>gradle.properties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7a7e85;}
+.s1 { color: #bcbec4;}
+.s2 { color: #cf8e6d;}
+.s3 { color: #808080;}
+.s4 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+gradle.properties</font>
+</center></td></tr></table>
+<pre><span class="s0"># Sets default memory used for gradle commands. Can be overridden by user or command line properties.</span>
+<span class="s0"># This is required to provide enough memory for the Minecraft decompilation process.</span>
+<span class="s2">org.gradle.jvmargs</span><span class="s3">=</span><span class="s4">-Xmx3G</span>
+<span class="s2">org.gradle.daemon</span><span class="s3">=</span><span class="s4">false</span>
+
+
+<span class="s0">## Environment Properties</span>
+
+<span class="s0"># The Minecraft version must agree with the Forge version to get a valid artifact</span>
+<span class="s2">minecraft_version</span><span class="s3">=</span><span class="s4">1.20.1</span>
+<span class="s0"># The Minecraft version range can use any release version of Minecraft as bounds.</span>
+<span class="s0"># Snapshots, pre-releases, and release candidates are not guaranteed to sort properly</span>
+<span class="s0"># as they do not follow standard versioning conventions.</span>
+<span class="s2">minecraft_version_range</span><span class="s3">=</span><span class="s4">[1.20.1,1.21)</span>
+<span class="s0"># The Forge version must agree with the Minecraft version to get a valid artifact</span>
+<span class="s2">forge_version</span><span class="s3">=</span><span class="s4">47.4.0</span>
+<span class="s0"># The Forge version range can use any version of Forge as bounds or match the loader version range</span>
+<span class="s2">forge_version_range</span><span class="s3">=</span><span class="s4">[47,)</span>
+<span class="s0"># The loader version range can only use the major version of Forge/FML as bounds</span>
+<span class="s2">loader_version_range</span><span class="s3">=</span><span class="s4">[47,)</span>
+<span class="s0"># The mapping channel to use for mappings.</span>
+<span class="s0"># The default set of supported mapping channels are [&quot;official&quot;, &quot;snapshot&quot;, &quot;snapshot_nodoc&quot;, &quot;stable&quot;, &quot;stable_nodoc&quot;].</span>
+<span class="s0"># Additional mapping channels can be registered through the &quot;channelProviders&quot; extension in a Gradle plugin.</span>
+<span class="s0">#</span>
+<span class="s0"># | Channel   | Version              |                                                                                |</span>
+<span class="s0"># |-----------|----------------------|--------------------------------------------------------------------------------|</span>
+<span class="s0"># | official  | MCVersion            | Official field/method names from Mojang mapping files                          |</span>
+<span class="s0"># | parchment | YYYY.MM.DD-MCVersion | Open community-sourced parameter names and javadocs layered on top of official |</span>
+<span class="s0">#</span>
+<span class="s0"># You must be aware of the Mojang license when using the 'official' or 'parchment' mappings.</span>
+<span class="s0"># See more information here: https://github.com/MinecraftForge/MCPConfig/blob/master/Mojang.md</span>
+<span class="s0">#</span>
+<span class="s0"># Parchment is an unofficial project maintained by ParchmentMC, separate from Minecraft Forge.</span>
+<span class="s0"># Additional setup is needed to use their mappings, see https://parchmentmc.org/docs/getting-started</span>
+<span class="s2">mapping_channel</span><span class="s3">=</span><span class="s4">parchment</span>
+<span class="s0"># The mapping version to query from the mapping channel.</span>
+<span class="s0"># This must match the format required by the mapping channel.</span>
+<span class="s2">mapping_version</span><span class="s3">=</span><span class="s4">2023.09.03-1.20.1</span>
+
+
+<span class="s0">## Mod Properties</span>
+
+<span class="s0"># The unique mod identifier for the mod. Must be lowercase in English locale. Must fit the regex [a-z][a-z0-9_]{1,63}</span>
+<span class="s0"># Must match the String constant located in the main mod class annotated with @Mod.</span>
+<span class="s2">mod_id</span><span class="s3">=</span><span class="s4">creativebakeryinc</span>
+<span class="s0"># The human-readable display name for the mod.</span>
+<span class="s2">mod_name</span><span class="s3">=</span><span class="s4">CreativeBakeryInc</span>
+<span class="s0"># The license of the mod. Review your options at https://choosealicense.com/. All Rights Reserved is the default.</span>
+<span class="s2">mod_license</span><span class="s3">=</span><span class="s4">MIT</span>
+<span class="s0"># The mod version. See https://semver.org/</span>
+<span class="s2">mod_version</span><span class="s3">=</span><span class="s4">0.1-1.20.1</span>
+<span class="s0"># The group ID for the mod. It is only important when publishing as an artifact to a Maven repository.</span>
+<span class="s0"># This should match the base package used for the mod sources.</span>
+<span class="s0"># See https://maven.apache.org/guides/mini/guide-naming-conventions.html</span>
+<span class="s2">mod_group_id</span><span class="s3">=</span><span class="s4">net.SN.Creative_Bakery_inc</span>
+<span class="s0"># The authors of the mod. This is a simple text string that is used for display purposes in the mod list.</span>
+<span class="s2">mod_authors</span><span class="s3">=</span><span class="s4">SN</span>
+<span class="s0"># The description of the mod. This is a simple multiline text string that is used for display purposes in the mod list.</span>
+<span class="s2">mod_description</span><span class="s3">=</span><span class="s4">This is a mod with random stuff made be SN :D</span></pre>
+</body>
+</html>
