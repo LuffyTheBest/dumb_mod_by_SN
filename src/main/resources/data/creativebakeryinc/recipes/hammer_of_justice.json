@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " L ",
+    "LHP",
+    " P "
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:lime_dye"
+    },
+    "H": {
+      "item": "creativebakeryinc:hammer"
+    },
+    "P": {
+      "item": "minecraft:purple_dye"
+    }
+  },
+  "result": {
+    "item": "creativebakeryinc:hammer_of_justice"
+  }
+}

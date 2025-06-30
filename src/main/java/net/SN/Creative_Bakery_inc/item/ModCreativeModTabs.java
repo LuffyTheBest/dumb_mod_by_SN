@@ -22,6 +22,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.HAMMER_ITEM.get());
                         output.accept(ModItems.LEGENDARY_HAMMER_ITEM.get());
                         output.accept(ModBlocks.DUSTY_HAMMER.get());
+                        output.accept(ModItems.HAMMER_OF_JUSTICE.get());
                         // Add more items/blocks here as needed
                     })
                     .build());

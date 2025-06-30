@@ -1,0 +1,10 @@
+{
+  "hammer_of_justice": {
+    "sounds": [
+      {
+        "name": "creativebakeryinc:hammer_of_justice",
+        "stream": true
+      }
+    ]
+  }
+}
